@@ -4,33 +4,32 @@ import brandMask from './images/brand_mask.webp'
 
 export default function Home () {
   return (
-    <div className='p-22'>
-      <h1 className='text-white text-center text-[36px] font-bold uppercase mb-12'>
-        Dashboard
-      </h1>
-      <div className='relative h-150 w-350 mx-auto mb-12'>
-        <Image 
-          src={brand} 
-          alt='brand' 
-          fill
-          className='object-cover'
-          style={{ 
-            maskImage: `url(${brandMask.src})`,
-            maskPosition: "center",
-            maskSize: "contain",
-            maskRepeat: 'no-repeat'
-          }} 
-        />
-      </div>
-      <div className='text-white text-center text-[24px] mb-50'>
-        Your personal view, and token management
-      </div>
-      <div className='text-center'>
-        <button className='cursor-pointer px-22 py-9 bg-white rounded-full text-[28px] text-black'>
-          Connect Wallet
-        </button>
-      </div>
-      
+    <div className='px-22 py-64 flex flex-col w-fit mx-auto'>
+      <article className='prose dark:!prose-invert'>
+        <h1>
+          Dashboard
+        </h1>
+        <div className='relative h-150 w-full'>
+          <Image 
+            src={brand} 
+            alt='brand' 
+            fill
+            className='object-cover !m-0'
+            style={{ 
+              maskImage: `url(${brandMask.src})`,
+              maskPosition: "center",
+              maskSize: "contain",
+              maskRepeat: 'no-repeat'
+            }} 
+          />
+        </div>
+        <p>
+          Your personal view and token management, work in progress.
+        </p>
+        <p>
+          Stay tuned with <a className='text-blue' href="https://t.me/co_ca_lab">Co.Ca. Lab</a>
+        </p>
+      </article>
     </div>
   )
 }
