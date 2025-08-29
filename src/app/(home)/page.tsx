@@ -4,7 +4,7 @@ import brandMask from './images/brand_mask.webp'
 
 export default function Home () {
   return (
-    <div className='px-22 py-64 flex flex-col w-fit mx-auto'>
+    <div className='p-22 flex flex-col w-fit mx-auto'>
       <article className='prose dark:!prose-invert'>
         <h1>
           Dashboard
